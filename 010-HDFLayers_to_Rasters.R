@@ -75,7 +75,7 @@ blackmarble_h5_to_tif <- function(f){
   # plot(r, breaks = 0.1*c(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1))
   # plot(r)
   
-  writeRaster(r, paste0("../Rasters/",f, ".tif"))
+  writeRaster(r, paste0("../Rasters/", gsub(".h5","",f), ".tif"))
 }
 
 # # apply the function
